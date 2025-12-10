@@ -2,6 +2,7 @@ import type {Metadata} from 'next'
 import {Inter, Space_Grotesk} from 'next/font/google'
 import {ThemeProvider} from '@/components/ThemeProvider'
 import './globals.css'
+import {Analytics} from "@vercel/analytics/next"
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ['latin'],
@@ -80,6 +81,7 @@ export default function RootLayout({
             />
         </head>
         <body className="min-h-screen font-sans">
+        <Analytics/>
         <ThemeProvider>
             {children}
         </ThemeProvider>

@@ -1,0 +1,125 @@
+{
+  "categories": [
+    {
+      "name": "Backend",
+      "technologies": [
+        {
+          "name": "Java",
+          "icon": "☕"
+        },
+        {
+          "name": "Spring Boot",
+          "icon": "🍃"
+        },
+        {
+          "name": "Node.js",
+          "icon": "💚"
+        },
+        {
+          "name": "Go",
+          "icon": "🔵"
+        },
+        {
+          "name": "Python",
+          "icon": "🐍"
+        }
+      ]
+    },
+    {
+      "name": "Frontend",
+      "technologies": [
+        {
+          "name": "React",
+          "icon": "⚛️"
+        },
+        {
+          "name": "Next.js",
+          "icon": "▲"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "💚"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "📘"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "🎨"
+        }
+      ]
+    },
+    {
+      "name": "Mobile",
+      "technologies": [
+        {
+          "name": "React Native",
+          "icon": "📱"
+        },
+        {
+          "name": "Flutter",
+          "icon": "🦋"
+        },
+        {
+          "name": "Swift",
+          "icon": "🍎"
+        },
+        {
+          "name": "Kotlin",
+          "icon": "🤖"
+        }
+      ]
+    },
+    {
+      "name": "Database",
+      "technologies": [
+        {
+          "name": "PostgreSQL",
+          "icon": "🐘"
+        },
+        {
+          "name": "MySQL",
+          "icon": "🐬"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "🍃"
+        },
+        {
+          "name": "Redis",
+          "icon": "🔴"
+        },
+        {
+          "name": "Elasticsearch",
+          "icon": "🔍"
+        }
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "technologies": [
+        {
+          "name": "AWS",
+          "icon": "☁️"
+        },
+        {
+          "name": "Google Cloud",
+          "icon": "🌥️"
+        },
+        {
+          "name": "Docker",
+          "icon": "🐳"
+        },
+        {
+          "name": "Kubernetes",
+          "icon": "☸️"
+        },
+        {
+          "name": "GitLab CI/CD",
+          "icon": "🦊"
+        }
+      ]
+    }
+  ]
+}

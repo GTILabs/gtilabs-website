@@ -1,0 +1,54 @@
+{
+  "clients": [
+    {
+      "name": "Bank Nusantara",
+      "logo": "/images/clients/bank.svg"
+    },
+    {
+      "name": "TechCorp Indonesia",
+      "logo": "/images/clients/techcorp.svg"
+    },
+    {
+      "name": "Logistics Pro",
+      "logo": "/images/clients/logistics.svg"
+    },
+    {
+      "name": "MediGroup",
+      "logo": "/images/clients/medigroup.svg"
+    },
+    {
+      "name": "RetailMax",
+      "logo": "/images/clients/retailmax.svg"
+    },
+    {
+      "name": "IndustriOne",
+      "logo": "/images/clients/industri.svg"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "quote": "GTI Labs delivered our banking platform ahead of schedule with exceptional quality. Their team's expertise in fintech is unmatched.",
+      "author": "Rina Wijaya",
+      "role": "CTO",
+      "company": "Bank Nusantara",
+      "avatar": "/images/testimonials/rina.jpg"
+    },
+    {
+      "id": 2,
+      "quote": "The logistics system they built transformed our operations. Real-time tracking and route optimization saved us 30% in costs.",
+      "author": "Hendra Kusuma",
+      "role": "Operations Director",
+      "company": "Logistics Pro",
+      "avatar": "/images/testimonials/hendra.jpg"
+    },
+    {
+      "id": 3,
+      "quote": "Professional, responsive, and technically excellent. GTI Labs is our go-to partner for all software development needs.",
+      "author": "Maya Sari",
+      "role": "CEO",
+      "company": "TechCorp Indonesia",
+      "avatar": "/images/testimonials/maya.jpg"
+    }
+  ]
+}

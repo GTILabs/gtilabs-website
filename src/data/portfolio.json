@@ -1,0 +1,93 @@
+{
+  "projects": [
+    {
+      "id": "fintech-platform",
+      "title": "FinanceHub Platform",
+      "category": "Fintech",
+      "description": "A comprehensive financial management platform serving over 100,000 users with real-time transaction processing and analytics.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "Redis",
+        "Docker"
+      ],
+      "image": "/images/projects/fintech.jpg",
+      "color": "#10b981"
+    },
+    {
+      "id": "logistics-system",
+      "title": "LogiTrack System",
+      "category": "Logistics",
+      "description": "End-to-end logistics management system with real-time tracking, route optimization, and automated dispatch.",
+      "technologies": [
+        "Node.js",
+        "React",
+        "MongoDB",
+        "AWS",
+        "IoT"
+      ],
+      "image": "/images/projects/logistics.jpg",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "healthcare-app",
+      "title": "MediCare Mobile",
+      "category": "Healthcare",
+      "description": "Telemedicine application connecting patients with healthcare providers, featuring video consultations and e-prescriptions.",
+      "technologies": [
+        "React Native",
+        "Firebase",
+        "Node.js",
+        "WebRTC"
+      ],
+      "image": "/images/projects/healthcare.jpg",
+      "color": "#ec4899"
+    },
+    {
+      "id": "ecommerce-platform",
+      "title": "ShopEase Platform",
+      "category": "E-Commerce",
+      "description": "Multi-vendor e-commerce platform handling millions of transactions with advanced inventory management.",
+      "technologies": [
+        "Next.js",
+        "Go",
+        "PostgreSQL",
+        "Elasticsearch",
+        "Kubernetes"
+      ],
+      "image": "/images/projects/ecommerce.jpg",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "hr-management",
+      "title": "PeopleFirst HRMS",
+      "category": "Enterprise",
+      "description": "Complete human resource management system with payroll, attendance, recruitment, and performance modules.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "Vue.js",
+        "Docker"
+      ],
+      "image": "/images/projects/hr.jpg",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "iot-dashboard",
+      "title": "SmartFactory IoT",
+      "category": "Manufacturing",
+      "description": "Industrial IoT platform for smart manufacturing with predictive maintenance and real-time monitoring.",
+      "technologies": [
+        "Python",
+        "React",
+        "InfluxDB",
+        "MQTT",
+        "TensorFlow"
+      ],
+      "image": "/images/projects/iot.jpg",
+      "color": "#f97316"
+    }
+  ]
+}

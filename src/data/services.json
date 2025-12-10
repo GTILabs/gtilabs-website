@@ -1,0 +1,76 @@
+{
+  "services": [
+    {
+      "id": "custom-software",
+      "title": "Custom Software Development",
+      "description": "Tailored software solutions built from the ground up to meet your unique business requirements. From web applications to enterprise systems.",
+      "icon": "Code2",
+      "features": [
+        "Full-stack web development",
+        "Enterprise applications",
+        "API development & integration",
+        "Legacy system modernization"
+      ]
+    },
+    {
+      "id": "cloud-solutions",
+      "title": "Cloud Solutions",
+      "description": "Scalable cloud infrastructure and migration services. We help you leverage AWS, GCP, and Azure for optimal performance and cost efficiency.",
+      "icon": "Cloud",
+      "features": [
+        "Cloud architecture design",
+        "Migration & deployment",
+        "DevOps & CI/CD pipelines",
+        "Kubernetes & containerization"
+      ]
+    },
+    {
+      "id": "mobile-development",
+      "title": "Mobile Development",
+      "description": "Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android devices.",
+      "icon": "Smartphone",
+      "features": [
+        "iOS & Android native apps",
+        "React Native & Flutter",
+        "App maintenance & support",
+        "Performance optimization"
+      ]
+    },
+    {
+      "id": "consulting",
+      "title": "IT Consulting",
+      "description": "Strategic technology consulting to help you make informed decisions and optimize your digital infrastructure.",
+      "icon": "Lightbulb",
+      "features": [
+        "Technology assessment",
+        "Digital transformation strategy",
+        "Architecture consulting",
+        "Security audits"
+      ]
+    },
+    {
+      "id": "data-analytics",
+      "title": "Data & Analytics",
+      "description": "Transform your data into actionable insights with our analytics and business intelligence solutions.",
+      "icon": "BarChart3",
+      "features": [
+        "Data warehouse design",
+        "Business intelligence",
+        "Machine learning solutions",
+        "Real-time analytics"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "title": "Support & Maintenance",
+      "description": "Reliable ongoing support and maintenance services to keep your systems running smoothly 24/7.",
+      "icon": "Wrench",
+      "features": [
+        "24/7 technical support",
+        "System monitoring",
+        "Bug fixes & updates",
+        "Performance tuning"
+      ]
+    }
+  ]
+}

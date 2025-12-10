@@ -1,0 +1,52 @@
+{
+  "name": "GTI Labs",
+  "tagline": "Transforming Ideas into Digital Excellence",
+  "description": "We are a cutting-edge IT company specializing in enterprise software development, cloud solutions, and digital transformation. Our team of experts delivers innovative solutions that drive business growth.",
+  "founded": "2020",
+  "location": "Jakarta, Indonesia",
+  "email": "hello@gtilabs.id",
+  "phone": "+62 21 1234 5678",
+  "address": "Jl. Sudirman Kav. 52-53, Jakarta Selatan 12190",
+  "social": {
+    "linkedin": "https://linkedin.com/company/gtilabs",
+    "github": "https://github.com/gtilabs",
+    "twitter": "https://twitter.com/gtilabs",
+    "instagram": "https://instagram.com/gtilabs.id"
+  },
+  "stats": [
+    {
+      "value": "50+",
+      "label": "Projects Delivered"
+    },
+    {
+      "value": "30+",
+      "label": "Happy Clients"
+    },
+    {
+      "value": "15+",
+      "label": "Team Members"
+    },
+    {
+      "value": "99%",
+      "label": "Client Satisfaction"
+    }
+  ],
+  "values": [
+    {
+      "title": "Innovation",
+      "description": "We embrace cutting-edge technologies to deliver future-proof solutions."
+    },
+    {
+      "title": "Quality",
+      "description": "Excellence is our standard. We never compromise on code quality and performance."
+    },
+    {
+      "title": "Collaboration",
+      "description": "We work closely with clients to understand and exceed their expectations."
+    },
+    {
+      "title": "Integrity",
+      "description": "Transparency and honesty guide every decision we make."
+    }
+  ]
+}

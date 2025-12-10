@@ -1,0 +1,84 @@
+{
+  "mainNav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Services",
+      "href": "#services"
+    },
+    {
+      "label": "Portfolio",
+      "href": "#portfolio"
+    },
+    {
+      "label": "Tech Stack",
+      "href": "#techstack"
+    },
+    {
+      "label": "Team",
+      "href": "#team"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "footerNav": {
+    "services": [
+      {
+        "label": "Custom Software",
+        "href": "#services"
+      },
+      {
+        "label": "Cloud Solutions",
+        "href": "#services"
+      },
+      {
+        "label": "Mobile Development",
+        "href": "#services"
+      },
+      {
+        "label": "IT Consulting",
+        "href": "#services"
+      }
+    ],
+    "company": [
+      {
+        "label": "About Us",
+        "href": "#about"
+      },
+      {
+        "label": "Our Team",
+        "href": "#team"
+      },
+      {
+        "label": "Portfolio",
+        "href": "#portfolio"
+      },
+      {
+        "label": "Careers",
+        "href": "/careers"
+      }
+    ],
+    "resources": [
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Case Studies",
+        "href": "/case-studies"
+      },
+      {
+        "label": "Documentation",
+        "href": "/docs"
+      }
+    ]
+  }
+}

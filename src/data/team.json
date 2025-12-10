@@ -1,0 +1,57 @@
+{
+  "team": [
+    {
+      "id": "ceo",
+      "name": "Ahmad Pratama",
+      "role": "CEO & Founder",
+      "bio": "Visionary leader with 15+ years in tech industry. Former engineering lead at major tech companies.",
+      "image": "/images/team/ceo.jpg",
+      "linkedin": "https://linkedin.com/in/ahmadpratama",
+      "twitter": "https://twitter.com/ahmadpratama"
+    },
+    {
+      "id": "cto",
+      "name": "Budi Santoso",
+      "role": "CTO",
+      "bio": "Tech architect passionate about scalable systems. Expert in cloud infrastructure and microservices.",
+      "image": "/images/team/cto.jpg",
+      "linkedin": "https://linkedin.com/in/budisantoso",
+      "github": "https://github.com/budisantoso"
+    },
+    {
+      "id": "lead-dev",
+      "name": "Siti Rahma",
+      "role": "Lead Developer",
+      "bio": "Full-stack developer specializing in Java and React. Passionate about clean code and best practices.",
+      "image": "/images/team/lead-dev.jpg",
+      "linkedin": "https://linkedin.com/in/sitirahma",
+      "github": "https://github.com/sitirahma"
+    },
+    {
+      "id": "pm",
+      "name": "Dewi Kusuma",
+      "role": "Project Manager",
+      "bio": "PMP certified with expertise in agile methodologies. Ensures projects are delivered on time and budget.",
+      "image": "/images/team/pm.jpg",
+      "linkedin": "https://linkedin.com/in/dewikusuma"
+    },
+    {
+      "id": "designer",
+      "name": "Rizki Aditya",
+      "role": "UI/UX Lead",
+      "bio": "Creative designer focused on user-centered design. Creates intuitive and beautiful digital experiences.",
+      "image": "/images/team/designer.jpg",
+      "linkedin": "https://linkedin.com/in/rizkiaditya",
+      "dribbble": "https://dribbble.com/rizkiaditya"
+    },
+    {
+      "id": "devops",
+      "name": "Fajar Nugroho",
+      "role": "DevOps Engineer",
+      "bio": "Cloud and infrastructure specialist. Expert in Kubernetes, AWS, and CI/CD automation.",
+      "image": "/images/team/devops.jpg",
+      "linkedin": "https://linkedin.com/in/fajarnugroho",
+      "github": "https://github.com/fajarnugroho"
+    }
+  ]
+}

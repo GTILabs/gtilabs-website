@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link href="/favicon.png" rel="icon"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- Theme initialization script (prevent flash) -->
+    <script>
+        (function () {
+            try {
+                var theme = localStorage.getItem('theme');
+                if (
+                    theme === 'light' ||
+                    (!theme && window.matchMedia('(prefers-color-scheme: light)').matches)
+                ) {
+                    document.documentElement.classList.add('light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                }
+            } catch (e) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+    
+		<link rel="modulepreload" href="/_app/immutable/entry/start.BXut0Kwb.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BqylOeue.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DS7VdxVw.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.DkBNMVBL.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BCrIPWsQ.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/D4zD50dN.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BzKJnAxa.js">
+</head>
+<body class="min-h-screen font-sans" data-sveltekit-preload-data="hover">
+<div style="display: contents">
+			<script>
+				{
+					__sveltekit_upt8j5 = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.BXut0Kwb.js"),
+						import("/_app/immutable/entry/app.DkBNMVBL.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+</body>
+</html>

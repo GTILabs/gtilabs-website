@@ -11,12 +11,30 @@
     },
     {
       "id": "cto",
-      "name": "Budi Santoso",
+      "name": "Eko Kurniawan Khannedy",
       "role": "CTO",
       "bio": "Tech architect passionate about scalable systems. Expert in cloud infrastructure and microservices.",
-      "image": "/images/team/cto.jpg",
-      "linkedin": "https://linkedin.com/in/budisantoso",
-      "github": "https://github.com/budisantoso"
+      "image": "/images/eko.jpeg",
+      "linkedin": "https://linkedin.com/in/ekokurniawankhannedy",
+      "github": "https://github.com/khannedy"
+    },
+    {
+      "id": "coo",
+      "name": "Endy Muhardin",
+      "role": "COO",
+      "bio": "Operations leader with extensive experience in business development and strategic planning.",
+      "image": "/images/endy.jpeg",
+      "linkedin": "https://linkedin.com/in/endymuhardin",
+      "github": "https://github.com/endymuhardin"
+    },
+    {
+      "id": "ciso",
+      "name": "Raden Ardiansyah Natakusumah",
+      "role": "CISO",
+      "bio": "Cybersecurity expert specializing in information security and risk management.",
+      "image": "/images/raden.jpeg",
+      "linkedin": "https://linkedin.com/in/radenardiansyah",
+      "github": "https://github.com/radenardiansyah"
     },
     {
       "id": "lead-dev",

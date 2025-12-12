@@ -3,6 +3,7 @@
 import {motion, useInView} from 'framer-motion'
 import {useRef} from 'react'
 import {Github, Linkedin, Twitter} from 'lucide-react'
+import Image from 'next/image'
 import team from '@/data/team.json'
 
 export default function Team() {
@@ -60,11 +61,19 @@ export default function Team() {
                                     className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500 to-accent-purple opacity-20 group-hover:opacity-40 transition-opacity"/>
                                 <div
                                     className="relative w-full h-full rounded-full dark:bg-dark-700 bg-light-200 flex items-center justify-center overflow-hidden">
-                                    {/* Placeholder avatar with initials */}
-                                    <span
-                                        className="text-2xl font-bold dark:text-dark-300 text-light-600 group-hover:text-primary-500 dark:group-hover:text-primary-400 transition-colors">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </span>
+                                    {member.image ? (
+                                        <Image
+                                            src={member.image}
+                                            alt={member.name}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    ) : (
+                                        <span
+                                            className="text-2xl font-bold dark:text-dark-300 text-light-600 group-hover:text-primary-500 dark:group-hover:text-primary-400 transition-colors">
+                                            {member.name.split(' ').map(n => n[0]).join('')}
+                                        </span>
+                                    )}
                                 </div>
                                 {/* Online indicator */}
                                 <div

@@ -15,7 +15,7 @@
       "id": "cto",
       "name": "Eko Kurniawan Khannedy",
       "role": "CTO",
-      "bio": "Tech architect passionate about scalable systems. Expert in cloud infrastructure and microservices.",
+      "bio": "Tech architect passionate about scalable systems with 15+ years in tech industry. Expert in cloud infrastructure and microservices.",
       "image": "/images/eko.jpeg",
       "linkedin": "https://linkedin.com/in/ekokurniawankhannedy",
       "github": "https://github.com/khannedy"
@@ -33,7 +33,7 @@
       "id": "ciso",
       "name": "Raden Ardiansyah Natakusumah",
       "role": "CISO",
-      "bio": "Cybersecurity expert specializing in information security and risk management.",
+      "bio": "Information security leader with 21+ years of experience. Expert in cybersecurity, risk management, and compliance for regulated industries.",
       "image": "/images/raden.jpeg",
       "linkedin": "https://linkedin.com/in/radenardiansyah",
       "github": "https://github.com/radenardiansyah"
@@ -94,7 +94,7 @@
     },
     {
       "id": "backend-dev",
-      "name": "Aji Ghozali",
+      "name": "Aji Gozali",
       "role": "Backend Developer",
       "bio": "Backend development specialist with expertise in server-side technologies and API design.",
       "image": "/images/aji.png",

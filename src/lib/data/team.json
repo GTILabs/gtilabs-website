@@ -40,12 +40,10 @@
     },
     {
       "id": "lead-dev",
-      "name": "Siti Rahma",
+      "name": "M. Irwan Andriawan",
       "role": "Lead Developer",
       "bio": "Full-stack developer specializing in Java and React. Passionate about clean code and best practices.",
-      "image": "/images/team/lead-dev.jpg",
-      "linkedin": "https://linkedin.com/in/sitirahma",
-      "github": "https://github.com/sitirahma"
+      "image": "/images/irwan.jpeg"
     },
     {
       "id": "pm",

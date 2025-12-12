@@ -1,36 +1,55 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
-	import { CheckCircle, Loader2, Mail, MapPin, Phone, Send } from 'lucide-svelte';
+	import { CheckCircle, Loader2, Mail, MapPin, Phone, Send, AlertCircle } from 'lucide-svelte';
 	import { inview } from '$lib/actions/inview';
 	import company from '$lib/data/company.json';
+
+	// Cloudflare Worker endpoint - update this after deploying the worker
+	const EMAIL_WORKER_URL = 'https://gtilabs-email-worker.gtilabs.workers.dev';
 
 	let isVisible = $state(false);
 	let isSubmitting = $state(false);
 	let isSubmitted = $state(false);
+	let errorMessage = $state('');
 
 	async function handleSubmit(e: SubmitEvent) {
 		e.preventDefault();
 		isSubmitting = true;
+		errorMessage = '';
 
 		const form = e.target as HTMLFormElement;
 		const formData = new FormData(form);
 
+		// Convert FormData to JSON
+		const data = {
+			firstName: formData.get('firstName'),
+			lastName: formData.get('lastName'),
+			email: formData.get('email'),
+			company: formData.get('company'),
+			projectType: formData.get('projectType'),
+			message: formData.get('message')
+		};
+
 		try {
-			const response = await fetch(form.action, {
+			const response = await fetch(EMAIL_WORKER_URL, {
 				method: 'POST',
-				body: formData,
 				headers: {
-					Accept: 'application/json'
-				}
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(data)
 			});
 
 			if (response.ok) {
 				isSubmitted = true;
 				form.reset();
 				setTimeout(() => (isSubmitted = false), 5000);
+			} else {
+				const result = await response.json();
+				errorMessage = result.error || 'Failed to send message. Please try again.';
 			}
 		} catch (error) {
 			console.error('Form submission error:', error);
+			errorMessage = 'Network error. Please check your connection and try again.';
 		} finally {
 			isSubmitting = false;
 		}
@@ -77,16 +96,15 @@
 				<!-- Contact Form -->
 				<div in:fly={{ x: -30, duration: 500, delay: 300 }}>
 					<div class="glass-card p-8">
-						<form
-							action="https://formsubmit.co/{company.email}"
-							method="POST"
-							onsubmit={handleSubmit}
-							class="space-y-6"
-						>
-							<!-- FormSubmit Configuration -->
-							<input type="hidden" name="_subject" value="New Contact from GTI Labs Website" />
-							<input type="hidden" name="_captcha" value="false" />
-							<input type="hidden" name="_template" value="table" />
+						<form onsubmit={handleSubmit} class="space-y-6">
+							{#if errorMessage}
+								<div
+									class="flex items-center gap-3 p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-500"
+								>
+									<AlertCircle class="w-5 h-5 shrink-0" />
+									<p class="text-sm">{errorMessage}</p>
+								</div>
+							{/if}
 
 							<div class="grid sm:grid-cols-2 gap-6">
 								<div>

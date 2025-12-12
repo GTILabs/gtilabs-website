@@ -1,0 +1,12 @@
+name = "gtilabs-email-worker"
+main = "email-worker.js"
+compatibility_date = "2024-01-01"
+
+# Environment variables (set these via Cloudflare dashboard or wrangler secret)
+# Do NOT put actual secrets here - use `wrangler secret put` command
+[vars]
+ALLOWED_ORIGIN = "https://gtilabs.id"
+RECIPIENT_EMAIL = "hello@gtilabs.id"
+
+# Secrets (set via: wrangler secret put BREVO_API_KEY)
+# BREVO_API_KEY = "your-api-key-here"

@@ -54,7 +54,7 @@
       "bio": "PMP certified with expertise in agile methodologies. Ensures projects are delivered on time and budget.",
       "image": "/images/hasan.jpeg",
       "linkedin": "https://linkedin.com/in/hasannasrulloh",
-      "github": "https://github.com/hasannasrulloh"
+      "github": "https://github.com/Rusyd4n"
     },
     {
       "id": "designer",
@@ -76,12 +76,12 @@
     },
     {
       "id": "mobile-dev",
-      "name": "Kendy",
+      "name": "Kendy Erik Katias",
       "role": "Mobile Developer",
       "bio": "Mobile development specialist with expertise in iOS and Android app development.",
       "image": "/images/kendy.jpeg",
       "linkedin": "https://linkedin.com/in/kendy",
-      "github": "https://github.com/kendy"
+      "github": "https://github.com/kendy29"
     },
     {
       "id": "web-dev",
@@ -100,6 +100,14 @@
       "image": "/images/aji.png",
       "linkedin": "https://www.linkedin.com/in/aji-gojali/",
       "github": "https://github.com/adzzie"
+    },
+    {
+      "id": "creative",
+      "name": "M. Irsyad Ulumuddin",
+      "role": "Creative Team",
+      "bio": "Creative specialist bringing innovative visual ideas and designs to life.",
+      "image": "/images/irsyad.jpg",
+      "github": "https://github.com/irsyad86"
     }
   ]
 }

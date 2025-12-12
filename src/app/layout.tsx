@@ -81,9 +81,9 @@ export default function RootLayout({
             />
         </head>
         <body className="min-h-screen font-sans">
-        <Analytics/>
         <ThemeProvider>
             {children}
+            <Analytics/>
         </ThemeProvider>
         </body>
         </html>

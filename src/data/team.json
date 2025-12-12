@@ -108,6 +108,13 @@
       "bio": "Creative specialist bringing innovative visual ideas and designs to life.",
       "image": "/images/irsyad.jpg",
       "github": "https://github.com/irsyad86"
+    },
+    {
+      "id": "creative-2",
+      "name": "M. Rizal",
+      "role": "Creative Team",
+      "bio": "Creative specialist bringing innovative visual ideas and designs to life.",
+      "image": "/images/ilal.jpeg"
     }
   ]
 }

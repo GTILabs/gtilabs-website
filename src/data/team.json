@@ -91,6 +91,15 @@
       "image": "/images/firly.jpeg",
       "linkedin": "https://linkedin.com/in/firlyansyahputrapratama",
       "github": "https://github.com/firlyansyah"
+    },
+    {
+      "id": "backend-dev",
+      "name": "Aji Ghozali",
+      "role": "Backend Developer",
+      "bio": "Backend development specialist with expertise in server-side technologies and API design.",
+      "image": "/images/aji.png",
+      "linkedin": "https://linkedin.com/in/ajighozali",
+      "github": "https://github.com/ajighozali"
     }
   ]
 }

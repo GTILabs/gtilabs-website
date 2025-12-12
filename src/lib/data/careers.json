@@ -1,0 +1,217 @@
+{
+  "title": "Join Our Team",
+  "subtitle": "Build the Future with Us",
+  "description": "We're looking for talented individuals who are passionate about technology and innovation. Join GTI Labs and be part of a team that's shaping the future of digital solutions.",
+  "benefits": [
+    {
+      "title": "Competitive Salary",
+      "description": "We offer competitive compensation packages based on experience and skills"
+    },
+    {
+      "title": "Remote Friendly",
+      "description": "Work from anywhere with flexible remote work options"
+    },
+    {
+      "title": "Health Benefits",
+      "description": "Comprehensive health insurance coverage for you and your family"
+    },
+    {
+      "title": "Learning & Growth",
+      "description": "Access to courses, conferences, and continuous learning opportunities"
+    },
+    {
+      "title": "Work-Life Balance",
+      "description": "Flexible hours and generous paid time off"
+    },
+    {
+      "title": "Great Team",
+      "description": "Collaborate with talented professionals in a supportive environment"
+    }
+  ],
+  "positions": [
+    {
+      "id": "backend-engineer",
+      "title": "Backend Engineer",
+      "department": "Engineering",
+      "type": "Full-time",
+      "location": "Remote / Jakarta",
+      "description": "We're looking for an experienced Backend Engineer to design, build, and maintain scalable server-side applications and APIs.",
+      "requirements": [
+        "3+ years of experience in backend development",
+        "Proficiency in Java, Kotlin, Go, or Node.js",
+        "Experience with RESTful APIs and microservices architecture",
+        "Strong knowledge of SQL and NoSQL databases",
+        "Familiarity with cloud platforms (AWS, GCP, or Azure)",
+        "Understanding of CI/CD pipelines and DevOps practices"
+      ],
+      "responsibilities": [
+        "Design and implement scalable backend services",
+        "Write clean, maintainable, and well-tested code",
+        "Collaborate with frontend and mobile teams",
+        "Optimize application performance and reliability",
+        "Participate in code reviews and technical discussions"
+      ]
+    },
+    {
+      "id": "frontend-engineer",
+      "title": "Frontend Engineer",
+      "department": "Engineering",
+      "type": "Full-time",
+      "location": "Remote / Jakarta",
+      "description": "Join our team as a Frontend Engineer to create beautiful, responsive, and performant web applications.",
+      "requirements": [
+        "3+ years of experience in frontend development",
+        "Expert knowledge of React, Vue, or Svelte",
+        "Strong proficiency in TypeScript and modern JavaScript",
+        "Experience with CSS frameworks (Tailwind, styled-components)",
+        "Understanding of web performance optimization",
+        "Familiarity with testing frameworks (Jest, Cypress)"
+      ],
+      "responsibilities": [
+        "Build responsive and accessible user interfaces",
+        "Implement complex UI components and interactions",
+        "Collaborate with designers to bring mockups to life",
+        "Optimize frontend performance and user experience",
+        "Maintain and improve existing codebases"
+      ]
+    },
+    {
+      "id": "qa-automation",
+      "title": "QA Automation Engineer",
+      "department": "Quality Assurance",
+      "type": "Full-time",
+      "location": "Remote / Jakarta",
+      "description": "We're seeking a QA Automation Engineer to ensure the quality and reliability of our software products through automated testing.",
+      "requirements": [
+        "2+ years of experience in QA automation",
+        "Proficiency in test automation tools (Selenium, Cypress, Playwright)",
+        "Experience with API testing (Postman, REST Assured)",
+        "Knowledge of programming languages (Java, Python, or JavaScript)",
+        "Understanding of CI/CD integration for testing",
+        "Experience with performance and load testing tools"
+      ],
+      "responsibilities": [
+        "Design and implement automated test frameworks",
+        "Write and maintain automated test scripts",
+        "Integrate tests into CI/CD pipelines",
+        "Identify, document, and track bugs",
+        "Collaborate with developers to improve testability"
+      ]
+    },
+    {
+      "id": "mobile-developer",
+      "title": "Mobile Developer",
+      "department": "Engineering",
+      "type": "Full-time",
+      "location": "Remote / Jakarta",
+      "description": "Join us as a Mobile Developer to build innovative mobile applications for iOS and Android platforms.",
+      "requirements": [
+        "3+ years of mobile development experience",
+        "Proficiency in React Native, Flutter, or native development (Swift/Kotlin)",
+        "Experience with mobile app architecture patterns",
+        "Knowledge of RESTful APIs and mobile security",
+        "Understanding of app store deployment processes",
+        "Experience with mobile testing and debugging"
+      ],
+      "responsibilities": [
+        "Develop and maintain mobile applications",
+        "Implement new features and optimize performance",
+        "Ensure code quality through testing and reviews",
+        "Collaborate with backend and design teams",
+        "Stay updated with mobile development trends"
+      ]
+    },
+    {
+      "id": "devops-engineer",
+      "title": "DevOps Engineer",
+      "department": "Infrastructure",
+      "type": "Full-time",
+      "location": "Remote / Jakarta",
+      "description": "We're looking for a DevOps Engineer to build and maintain our cloud infrastructure and deployment pipelines.",
+      "requirements": [
+        "3+ years of DevOps/SRE experience",
+        "Strong knowledge of cloud platforms (AWS, GCP, or Azure)",
+        "Experience with containerization (Docker, Kubernetes)",
+        "Proficiency in Infrastructure as Code (Terraform, Ansible)",
+        "Understanding of CI/CD tools (Jenkins, GitLab CI, GitHub Actions)",
+        "Knowledge of monitoring and logging tools"
+      ],
+      "responsibilities": [
+        "Design and maintain cloud infrastructure",
+        "Implement and optimize CI/CD pipelines",
+        "Ensure system reliability and scalability",
+        "Automate deployment and operational tasks",
+        "Monitor and troubleshoot production systems"
+      ]
+    },
+    {
+      "id": "cyber-security",
+      "title": "Cyber Security Engineer",
+      "department": "Security",
+      "type": "Full-time",
+      "location": "Remote / Jakarta",
+      "description": "Join our security team to protect our systems and data from cyber threats and ensure compliance with security standards.",
+      "requirements": [
+        "3+ years of experience in cybersecurity",
+        "Knowledge of security frameworks (OWASP, NIST, ISO 27001)",
+        "Experience with security tools (SIEM, vulnerability scanners)",
+        "Understanding of network security and encryption",
+        "Familiarity with penetration testing and security audits",
+        "Relevant certifications (CEH, CISSP, OSCP) are a plus"
+      ],
+      "responsibilities": [
+        "Conduct security assessments and penetration testing",
+        "Implement security controls and best practices",
+        "Monitor and respond to security incidents",
+        "Develop security policies and procedures",
+        "Train teams on security awareness"
+      ]
+    },
+    {
+      "id": "project-manager",
+      "title": "Project Manager",
+      "department": "Management",
+      "type": "Full-time",
+      "location": "Remote / Jakarta",
+      "description": "We're seeking an experienced Project Manager to lead cross-functional teams and deliver successful projects.",
+      "requirements": [
+        "4+ years of project management experience",
+        "Strong knowledge of Agile/Scrum methodologies",
+        "Experience with project management tools (Jira, Asana)",
+        "Excellent communication and leadership skills",
+        "PMP or Scrum Master certification is a plus",
+        "Technical background in software development"
+      ],
+      "responsibilities": [
+        "Plan, execute, and deliver projects on time and budget",
+        "Coordinate cross-functional teams and stakeholders",
+        "Manage project scope, risks, and resources",
+        "Facilitate Agile ceremonies and team collaboration",
+        "Report project status to leadership"
+      ]
+    },
+    {
+      "id": "ui-ux-lead",
+      "title": "UI/UX Lead",
+      "department": "Design",
+      "type": "Full-time",
+      "location": "Remote / Jakarta",
+      "description": "Lead our design team in creating exceptional user experiences and beautiful interfaces for our products.",
+      "requirements": [
+        "5+ years of UI/UX design experience",
+        "Expert proficiency in Figma, Sketch, or Adobe XD",
+        "Strong portfolio showcasing web and mobile designs",
+        "Experience with design systems and component libraries",
+        "Understanding of user research and usability testing",
+        "Knowledge of frontend development is a plus"
+      ],
+      "responsibilities": [
+        "Lead and mentor the design team",
+        "Create wireframes, prototypes, and high-fidelity designs",
+        "Establish and maintain design systems",
+        "Conduct user research and usability testing",
+        "Collaborate with product and engineering teams"
+      ]
+    }
+  ]
+}

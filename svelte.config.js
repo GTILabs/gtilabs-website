@@ -24,7 +24,7 @@ const config = {
         prerender: {
             handleHttpError: ({ path, referrer, message }) => {
                 // Pages that are linked but not yet created
-                const futurePages = ['/careers', '/portfolio', '/privacy', '/terms', '/blog', '/case-studies', '/docs'];
+                const futurePages = ['/portfolio', '/privacy', '/terms', '/blog', '/case-studies', '/docs'];
                 if (futurePages.includes(path)) {
                     console.warn(`Warning: ${path} is linked from ${referrer} but does not exist`);
                     return;

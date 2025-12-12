@@ -1,16 +1,39 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
-	import { CheckCircle, Mail, MapPin, Phone, Send } from 'lucide-svelte';
+	import { CheckCircle, Loader2, Mail, MapPin, Phone, Send } from 'lucide-svelte';
 	import { inview } from '$lib/actions/inview';
 	import company from '$lib/data/company.json';
 
 	let isVisible = $state(false);
+	let isSubmitting = $state(false);
 	let isSubmitted = $state(false);
 
-	function handleSubmit(e: SubmitEvent) {
+	async function handleSubmit(e: SubmitEvent) {
 		e.preventDefault();
-		isSubmitted = true;
-		setTimeout(() => (isSubmitted = false), 3000);
+		isSubmitting = true;
+
+		const form = e.target as HTMLFormElement;
+		const formData = new FormData(form);
+
+		try {
+			const response = await fetch(form.action, {
+				method: 'POST',
+				body: formData,
+				headers: {
+					Accept: 'application/json'
+				}
+			});
+
+			if (response.ok) {
+				isSubmitted = true;
+				form.reset();
+				setTimeout(() => (isSubmitted = false), 5000);
+			}
+		} catch (error) {
+			console.error('Form submission error:', error);
+		} finally {
+			isSubmitting = false;
+		}
 	}
 </script>
 
@@ -54,25 +77,45 @@
 				<!-- Contact Form -->
 				<div in:fly={{ x: -30, duration: 500, delay: 300 }}>
 					<div class="glass-card p-8">
-						<form onsubmit={handleSubmit} class="space-y-6">
+						<form
+							action="https://formsubmit.co/{company.email}"
+							method="POST"
+							onsubmit={handleSubmit}
+							class="space-y-6"
+						>
+							<!-- FormSubmit Configuration -->
+							<input type="hidden" name="_subject" value="New Contact from GTI Labs Website" />
+							<input type="hidden" name="_captcha" value="false" />
+							<input type="hidden" name="_template" value="table" />
+
 							<div class="grid sm:grid-cols-2 gap-6">
 								<div>
-									<label class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2">
+									<label
+										for="firstName"
+										class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2"
+									>
 										First Name
 									</label>
 									<input
 										type="text"
+										id="firstName"
+										name="firstName"
 										required
 										class="w-full px-4 py-3 rounded-xl dark:bg-dark-800 bg-white border dark:border-dark-700 border-light-300 dark:text-white text-light-900 dark:placeholder-dark-500 placeholder-light-400 dark:focus:border-primary-500 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all outline-none"
 										placeholder="John"
 									/>
 								</div>
 								<div>
-									<label class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2">
+									<label
+										for="lastName"
+										class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2"
+									>
 										Last Name
 									</label>
 									<input
 										type="text"
+										id="lastName"
+										name="lastName"
 										required
 										class="w-full px-4 py-3 rounded-xl dark:bg-dark-800 bg-white border dark:border-dark-700 border-light-300 dark:text-white text-light-900 dark:placeholder-dark-500 placeholder-light-400 dark:focus:border-primary-500 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all outline-none"
 										placeholder="Doe"
@@ -81,11 +124,16 @@
 							</div>
 
 							<div>
-								<label class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2">
+								<label
+									for="email"
+									class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2"
+								>
 									Email Address
 								</label>
 								<input
 									type="email"
+									id="email"
+									name="email"
 									required
 									class="w-full px-4 py-3 rounded-xl dark:bg-dark-800 bg-white border dark:border-dark-700 border-light-300 dark:text-white text-light-900 dark:placeholder-dark-500 placeholder-light-400 dark:focus:border-primary-500 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all outline-none"
 									placeholder="john@company.com"
@@ -93,38 +141,53 @@
 							</div>
 
 							<div>
-								<label class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2">
+								<label
+									for="company"
+									class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2"
+								>
 									Company
 								</label>
 								<input
 									type="text"
+									id="company"
+									name="company"
 									class="w-full px-4 py-3 rounded-xl dark:bg-dark-800 bg-white border dark:border-dark-700 border-light-300 dark:text-white text-light-900 dark:placeholder-dark-500 placeholder-light-400 dark:focus:border-primary-500 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all outline-none"
 									placeholder="Your Company"
 								/>
 							</div>
 
 							<div>
-								<label class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2">
+								<label
+									for="projectType"
+									class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2"
+								>
 									Project Type
 								</label>
 								<select
+									id="projectType"
+									name="projectType"
 									required
 									class="w-full px-4 py-3 rounded-xl dark:bg-dark-800 bg-white border dark:border-dark-700 border-light-300 dark:text-white text-light-900 dark:focus:border-primary-500 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all outline-none"
 								>
 									<option value="">Select a service</option>
-									<option value="custom-software">Custom Software Development</option>
-									<option value="cloud">Cloud Solutions</option>
-									<option value="mobile">Mobile Development</option>
-									<option value="consulting">IT Consulting</option>
-									<option value="other">Other</option>
+									<option value="Custom Software Development">Custom Software Development</option>
+									<option value="Cloud Solutions">Cloud Solutions</option>
+									<option value="Mobile Development">Mobile Development</option>
+									<option value="IT Consulting">IT Consulting</option>
+									<option value="Other">Other</option>
 								</select>
 							</div>
 
 							<div>
-								<label class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2">
+								<label
+									for="message"
+									class="block text-sm font-medium dark:text-dark-300 text-light-600 mb-2"
+								>
 									Message
 								</label>
 								<textarea
+									id="message"
+									name="message"
 									required
 									rows="4"
 									class="w-full px-4 py-3 rounded-xl dark:bg-dark-800 bg-white border dark:border-dark-700 border-light-300 dark:text-white text-light-900 dark:placeholder-dark-500 placeholder-light-400 dark:focus:border-primary-500 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all outline-none resize-none"
@@ -132,8 +195,15 @@
 								></textarea>
 							</div>
 
-							<button type="submit" class="btn-primary w-full group" disabled={isSubmitted}>
-								{#if isSubmitted}
+							<button
+								type="submit"
+								class="btn-primary w-full group"
+								disabled={isSubmitting || isSubmitted}
+							>
+								{#if isSubmitting}
+									<Loader2 class="w-5 h-5 mr-2 animate-spin" />
+									Sending...
+								{:else if isSubmitted}
 									<CheckCircle class="w-5 h-5 mr-2" />
 									Message Sent!
 								{:else}

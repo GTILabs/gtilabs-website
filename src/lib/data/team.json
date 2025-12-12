@@ -43,7 +43,8 @@
       "name": "M. Irwan Andriawan",
       "role": "Lead Developer",
       "bio": "Full-stack developer specializing in Java and React. Passionate about clean code and best practices.",
-      "image": "/images/irwan.jpeg"
+      "image": "/images/irwan.jpeg",
+      "github": "https://github.com/andriawan"
     },
     {
       "id": "pm",

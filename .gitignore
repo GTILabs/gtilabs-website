@@ -1,4 +1,26 @@
-.idea
-.next
+# Dependencies
 node_modules
+
+# Build outputs
+.svelte-kit
+build
+
+# IDE
+.idea
+.vscode
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vercel (if used)
 .vercel

@@ -20,6 +20,18 @@ const config = {
         }),
         paths: {
             base: process.argv.includes('dev') || process.env.CUSTOM_DOMAIN ? '' : process.env.BASE_PATH
+        },
+        prerender: {
+            handleHttpError: ({ path, referrer, message }) => {
+                // Pages that are linked but not yet created
+                const futurePages = ['/careers', '/portfolio', '/privacy', '/terms', '/blog', '/case-studies', '/docs'];
+                if (futurePages.includes(path)) {
+                    console.warn(`Warning: ${path} is linked from ${referrer} but does not exist`);
+                    return;
+                }
+                // Throw error for other 404s
+                throw new Error(message);
+            }
         }
     }
 };

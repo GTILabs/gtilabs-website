@@ -2,12 +2,14 @@
   "team": [
     {
       "id": "ceo",
-      "name": "Ahmad Pratama",
+      "name": "Hendi Santika",
       "role": "CEO & Founder",
       "bio": "Visionary leader with 15+ years in tech industry. Former engineering lead at major tech companies.",
-      "image": "/images/team/ceo.jpg",
-      "linkedin": "https://linkedin.com/in/ahmadpratama",
-      "twitter": "https://twitter.com/ahmadpratama"
+      "image": "/images/hendi.jpeg",
+      "linkedin": "https://linkedin.com/in/hendisantika",
+      "twitter": "https://twitter.com/hendisantika",
+      "github": "https://github.com/hendisantika",
+      "gitlab": "https://gitlab.com/hendisantika"
     },
     {
       "id": "cto",
@@ -47,11 +49,12 @@
     },
     {
       "id": "pm",
-      "name": "Dewi Kusuma",
+      "name": "Hasan Nasrulloh",
       "role": "Project Manager",
       "bio": "PMP certified with expertise in agile methodologies. Ensures projects are delivered on time and budget.",
-      "image": "/images/team/pm.jpg",
-      "linkedin": "https://linkedin.com/in/dewikusuma"
+      "image": "/images/hasan.jpeg",
+      "linkedin": "https://linkedin.com/in/hasannasrulloh",
+      "github": "https://github.com/hasannasrulloh"
     },
     {
       "id": "designer",
@@ -70,6 +73,15 @@
       "image": "/images/team/devops.jpg",
       "linkedin": "https://linkedin.com/in/fajarnugroho",
       "github": "https://github.com/fajarnugroho"
+    },
+    {
+      "id": "mobile-dev",
+      "name": "Kendy",
+      "role": "Mobile Developer",
+      "bio": "Mobile development specialist with expertise in iOS and Android app development.",
+      "image": "/images/kendy.jpeg",
+      "linkedin": "https://linkedin.com/in/kendy",
+      "github": "https://github.com/kendy"
     }
   ]
 }

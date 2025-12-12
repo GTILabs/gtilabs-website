@@ -82,6 +82,15 @@
       "image": "/images/kendy.jpeg",
       "linkedin": "https://linkedin.com/in/kendy",
       "github": "https://github.com/kendy"
+    },
+    {
+      "id": "web-dev",
+      "name": "Firlyansyah Putra Pratama",
+      "role": "Web Developer",
+      "bio": "Web development specialist with expertise in modern frontend and backend technologies.",
+      "image": "/images/firly.jpeg",
+      "linkedin": "https://linkedin.com/in/firlyansyahputrapratama",
+      "github": "https://github.com/firlyansyah"
     }
   ]
 }

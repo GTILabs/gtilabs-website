@@ -4,9 +4,6 @@
 	import { inview } from '$lib/actions/inview';
 	import company from '$lib/data/company.json';
 
-	// Cloudflare Worker endpoint - update this after deploying the worker
-	const EMAIL_WORKER_URL = 'https://gtilabs-email-worker.gtilabs.workers.dev';
-
 	let isVisible = $state(false);
 	let isSubmitting = $state(false);
 	let isSubmitted = $state(false);
@@ -20,23 +17,23 @@
 		const form = e.target as HTMLFormElement;
 		const formData = new FormData(form);
 
-		// Convert FormData to JSON
-		const data = {
-			firstName: formData.get('firstName'),
-			lastName: formData.get('lastName'),
-			email: formData.get('email'),
-			company: formData.get('company'),
-			projectType: formData.get('projectType'),
-			message: formData.get('message')
-		};
-
 		try {
-			const response = await fetch(EMAIL_WORKER_URL, {
+			// Using FormSubmit service
+			const response = await fetch(`https://formsubmit.co/ajax/${company.email}`, {
 				method: 'POST',
 				headers: {
-					'Content-Type': 'application/json'
+					'Content-Type': 'application/json',
+					Accept: 'application/json'
 				},
-				body: JSON.stringify(data)
+				body: JSON.stringify({
+					firstName: formData.get('firstName'),
+					lastName: formData.get('lastName'),
+					email: formData.get('email'),
+					company: formData.get('company'),
+					projectType: formData.get('projectType'),
+					message: formData.get('message'),
+					_subject: 'New Contact from GTI Labs Website'
+				})
 			});
 
 			if (response.ok) {
@@ -44,8 +41,7 @@
 				form.reset();
 				setTimeout(() => (isSubmitted = false), 5000);
 			} else {
-				const result = await response.json();
-				errorMessage = result.error || 'Failed to send message. Please try again.';
+				errorMessage = 'Failed to send message. Please try again.';
 			}
 		} catch (error) {
 			console.error('Form submission error:', error);

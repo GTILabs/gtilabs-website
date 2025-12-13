@@ -120,13 +120,14 @@
       "name": "Agus Nurputra",
       "role": "Creative Design",
       "bio": "Creative designer crafting visually compelling designs and brand experiences.",
-      "image": "/images/agus.jpg"
+      "image": "/images/agus.jpg",
+      "linkedin": "https://www.linkedin.com/in/agus-nur-putra-905347399/"
     },
     {
       "id": "creative-4",
       "name": "Ahmad Fadhil M.K.",
-      "role": "Creative Design",
-      "bio": "Creative designer crafting visually compelling designs and brand experiences.",
+      "role": "QA",
+      "bio": "Quality assurance specialist ensuring software reliability through comprehensive testing.",
       "image": "/images/fadhil.jpeg",
       "linkedin": "https://www.linkedin.com/in/ahmad-fadhil-551519393"
     },
@@ -137,6 +138,13 @@
       "bio": "Quality assurance specialist ensuring software reliability through comprehensive testing.",
       "image": "/images/hanifan.jpeg",
       "github": "https://github.com/LightArc-hub"
+    },
+    {
+      "id": "creative-5",
+      "name": "Jibril Abdurrahman",
+      "role": "Creative Design",
+      "bio": "Creative designer crafting visually compelling designs and brand experiences.",
+      "image": "/images/jibril.jpeg"
     }
   ]
 }

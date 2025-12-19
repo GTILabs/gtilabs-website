@@ -145,6 +145,15 @@
       "role": "Creative Design",
       "bio": "Creative designer crafting visually compelling designs and brand experiences.",
       "image": "/images/jibril.jpeg"
+    },
+    {
+      "id": "sqa",
+      "name": "Hilman Firdaus",
+      "role": "SQA",
+      "bio": "Software quality assurance specialist ensuring software reliability through comprehensive testing and quality standards.",
+      "image": "/images/hilman.jpeg",
+      "linkedin": "https://linkedin.com/in/hilmanfirdd",
+      "github": "https://github.com/hilman-firdd"
     }
   ]
 }
